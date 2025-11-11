@@ -1,0 +1,276 @@
+{
+  "editor.fontFamily": "FiraCode Nerd Font",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": false,
+  "editor.minimap.enabled": true,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 120,
+  "editor.linkedEditing": true,
+  "editor.accessibilitySupport": "off",
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.unicodeHighlight.nonBasicASCII": false,
+
+  // ==============================================
+  // Theme and Icons
+  // ==============================================
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Dracula Theme",
+
+  // ==============================================
+  // Code Formatting & Quality
+  // ==============================================
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "prettier.singleQuote": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.sortImports": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  "problems.showCurrentInStatus": true,
+
+  // ==============================================
+  // TypeScript/JavaScript Configuration
+  // ==============================================
+  "typescript.suggest.autoImports": true,
+  "typescript.suggest.completeJSDocs": true,
+  "typescript.suggest.completeFunctionCalls": true,
+  "javascript.suggest.completeFunctionCalls": true,
+  "typescript.inlayHints.parameterTypes.enabled": true,
+  "typescript.inlayHints.variableTypes.enabled": true,
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.format.semicolons": "insert",
+  "typescript.format.semicolons": "insert",
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+
+  // ==============================================
+  // Git Configuration
+  // ==============================================
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.pullBeforeCheckout": true,
+  "git.branchProtection": ["main", "master"],
+
+  // ==============================================
+  // File Management
+  // ==============================================
+  "files.autoSave": "onFocusChange",
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "node_modules/": true
+  },
+  "files.associations": {
+    "*.html": "html",
+    "*.css": "css"
+  },
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+
+  // ==============================================
+  // Search Configuration
+  // ==============================================
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/dist": true,
+    "**/coverage": true,
+    "**/.output": true
+  },
+
+  // ==============================================
+  // Terminal Settings
+  // ==============================================
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+
+  // ==============================================
+  // IntelliSense & Suggestions
+  // ==============================================
+  "editor.suggestSelection": "first",
+  "editor.suggest.showMethods": true,
+  "editor.suggest.preview": true,
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.snippetSuggestions": "bottom",
+  "editor.quickSuggestions": {
+    "strings": true,
+    "comments": true,
+    "other": true
+  },
+  "editor.acceptSuggestionOnCommitCharacter": true,
+  "editor.inlineSuggest.enabled": true,
+  "workbench.settings.editor": "ui",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.titleScrollbarSizing": "large",
+  "workbench.colorCustomizations": {},
+
+  // ==============================================
+  // Language-Specific Settings
+  // ==============================================
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true
+  },
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file"
+  },
+  "[terraform-vars]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file"
+  },
+  "[django-html]": {
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": true,
+      "strings": true
+    }
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+
+  // ==============================================
+  // Node.js/NPM Settings
+  // ==============================================
+  "npm.packageManager": "npm",
+  "npm.scriptExplorerAction": "run",
+  "debug.javascript.autoAttachFilter": "smart",
+  "debug.javascript.terminalOptions": {
+    "skipFiles": ["<node_internals>/**"]
+  },
+
+  // ==============================================
+  // Miscellaneous Tools & Extensions
+  // ==============================================
+  "extensions.allowed": {
+    // Enabling extensions not on the list
+    "*": true,
+    // Disable extension
+    "equinusocio.vsc-material-theme": false
+  },
+  "liveServer.settings.CustomBrowser": "chrome",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.port": 0,
+  "html-css-class-completion.enableEmmetSupport": true,
+  "auto-close-tag.activationOnLanguage": [
+    "xml",
+    "php",
+    "blade",
+    "ejs",
+    "jinja",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "plaintext",
+    "markdown",
+    "vue",
+    "liquid",
+    "erb",
+    "lang-cfml",
+    "cfml",
+    "HTML (EEx)",
+    "HTML (Eex)",
+    "plist"
+  ],
+  "tailwindCSS.emmetCompletions": true,
+  "json.maxItemsComputed": 500000,
+  "scss.showErrors": true,
+  "cSpell.userWords": ["Fastify", "gsap", "tailwindcss"],
+  "cSpell.enabledFileTypes": {
+    "scss": false
+  },
+  "redhat.telemetry.enabled": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "jest.runMode": {
+    "type": "on-demand"
+  },
+  "python.languageServer": "Pylance",
+  "yaml.validate": false,
+  "yaml.schemas": {},
+  "yaml.customTags": [
+    "!And",
+    "!And sequence",
+    "!If",
+    "!If sequence",
+    "!Not",
+    "!Not sequence",
+    "!Equals",
+    "!Equals sequence",
+    "!Or",
+    "!Or sequence",
+    "!FindInMap",
+    "!FindInMap sequence",
+    "!Base64",
+    "!Join",
+    "!Join sequence",
+    "!Cidr",
+    "!Ref",
+    "!Sub",
+    "!Sub sequence",
+    "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
+    "!ImportValue sequence",
+    "!Select",
+    "!Select sequence",
+    "!Split",
+    "!Split sequence"
+  ],
+  "settingsSync.ignoredSettings": [],
+  "django.snippets.exclude": ["cms", "wagtail"],
+  "vs-kubernetes": {
+    "vscode-kubernetes.helm-path.mac": "/Users/kei_ichi/.vs-kubernetes/tools/helm/darwin-amd64/helm"
+  },
+  "cfnLint.path": "/opt/homebrew/bin/cfn-lint",
+  "cssVariables.lookupFiles": [
+    "**/*.css",
+    "**/*.scss",
+    "**/*.sass",
+    "**/*.less",
+    "node_modules/@mantine/core/esm/index.css"
+  ],
+  "docker.extension.enableComposeLanguageServer": false,
+  "containers.containerClient": "com.microsoft.visualstudio.containers.docker",
+  "telemetry.telemetryLevel": "off",
+  "rust-analyzer.rustfmt.overrideCommand": null,
+  "[markdown]": {
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    },
+    "cSpell.fixSpellingWithRenameProvider": true,
+    "cSpell.advanced.feature.useReferenceProviderWithRename": true,
+    "cSpell.advanced.feature.useReferenceProviderRemove": "/^#+\\s/"
+  },
+  "mdb.mcp.server": "prompt"
+}
